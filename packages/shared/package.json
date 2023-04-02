@@ -1,0 +1,9 @@
+{
+  "name": "@alcmaeon/shared",
+  "private": true,
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint ./src --quiet"
+  }
+}
