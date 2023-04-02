@@ -1,0 +1,25 @@
+{
+  "name": "alcmaeon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel server client",
+    "server": "pnpm --filter @alcmaeon/server dev",
+    "client": "pnpm --filter @alcmaeon/client dev",
+    "lint": "pnpm --recursive lint",
+    "postinstall": "pnpm --filter @alcmaeon/server db:generate",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.7"
+  }
+}

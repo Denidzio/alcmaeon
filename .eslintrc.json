@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json", "./packages/*/tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "camelcase": ["error", { "ignoreDestructuring": true }],
+    "default-case-last": "error",
+    "eqeqeq": "warn",
+    "func-style": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": ["info", "warn", "error"]
+      }
+    ],
+    "no-else-return": ["error", { "allowElseIf": false }],
+    "no-extra-boolean-cast": "error",
+    "no-implicit-coercion": "error",
+    "no-param-reassign": "error",
+    "no-unneeded-ternary": "warn",
+    "no-useless-concat": "warn",
+    "no-useless-rename": "error",
+    "prefer-destructuring": "warn",
+    "prefer-exponentiation-operator": "error",
+    "prefer-object-spread": "error",
+    "prefer-promise-reject-errors": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "radix": "error",
+    "yoda": "error",
+    "no-dupe-class-members": "off",
+    "no-redeclare": "off",
+    "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/init-declarations": "warn",
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-magic-numbers": ["warn", { "ignoreEnums": true }],
+    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/no-throw-literal": "error",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
+}
